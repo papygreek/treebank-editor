@@ -580,7 +580,7 @@ const xmlToTable = (xml)=>{
     }).join("")}
             </tr>
             ${json.treebank.sentence.map((sentence, si)=>{
-        return sentence.word.map((word, wi)=>{
+        return `<tr><td class="sentence" colspan="${atts.length}"><h4>Sentence ${si + 1}</h4></td></tr>` + sentence.word.map((word, wi)=>{
             return `
                         <tr>
                             ${atts.map((att)=>{
@@ -3677,6 +3677,6 @@ const debounce = (func, wait = 300)=>{
     };
 };
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["7Aums","bNKaB"], "bNKaB", "parcelRequire770d")
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["7Aums","bNKaB"], "bNKaB", "parcelRequirea89e")
 
 //# sourceMappingURL=index.0641b553.js.map

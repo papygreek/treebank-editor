@@ -47,7 +47,7 @@ const xmlToTable = (xml) => {
             }).join('')}
             </tr>
             ${json.treebank.sentence.map((sentence, si) => {
-                return sentence.word.map((word, wi) => {
+                return `<tr><td class="sentence" colspan="${atts.length}"><h4>Sentence ${si+1}</h4></td></tr>` + sentence.word.map((word, wi) => {
                     return `
                         <tr>
                             ${atts.map((att) => {

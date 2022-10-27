@@ -25,7 +25,8 @@ textarea::placeholder {
 }
 
 table {
-  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing: 0;
 }
 
 #tokens {
@@ -36,8 +37,12 @@ th, td {
   padding: 2px 4px;
 }
 
-.th-row {
+th {
+  background: #fff;
   border-bottom: 1px solid silver;
+  padding: 10px 4px;
+  position: sticky;
+  top: 0;
 }
 
 .column {
